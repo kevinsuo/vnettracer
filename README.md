@@ -8,7 +8,7 @@
 
 # Build 
 
-> You need:
+You need:
 
 > gcc, python and bcc (https://github.com/iovisor/bcc)
 
