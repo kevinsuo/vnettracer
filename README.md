@@ -6,7 +6,7 @@
 
 3, calculate the raw tracing data and analyze the potential problems. 
 
-# Build 
+# Dependecy 
 
 You need:
 
