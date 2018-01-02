@@ -1,4 +1,4 @@
-# vnettracer
+# vNetTracer
 
 1, use the template bpf script to write and configure your own tracing scripts.
 
@@ -6,7 +6,7 @@
 
 3, calculate the raw tracing data and analyze the potential problems. 
 
-# Dependecy 
+# Dependency 
 
 You need:
 
