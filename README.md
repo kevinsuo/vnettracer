@@ -12,5 +12,16 @@ You need:
 
 > gcc, python and bcc (https://github.com/iovisor/bcc)
 
+# Run 
+
+To execute the bpf script:
+
+> $ python script.py
+
+# Configuration 
+
+To configure your tracing:
+
+> modify the files in the config folder based on your tracing purpose.
 
 
