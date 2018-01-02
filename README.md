@@ -6,3 +6,11 @@
 
 3, calculate the raw tracing data and analyze the potential problems. 
 
+# Build 
+
+> You need:
+
+> gcc, python and bcc (https://github.com/iovisor/bcc)
+
+
+
