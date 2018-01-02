@@ -22,6 +22,6 @@ To execute the bpf script:
 
 To configure your tracing:
 
-> modify the files in the config folder based on your tracing purpose.
+> modify the files in the config folder based on your tracing purpose, such as IP addresses, ports, etc.
 
 
