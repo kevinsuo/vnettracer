@@ -1,5 +1,5 @@
 # vNetTracer
-vNetTracer is a network tracing system, which enables flexible and programmable network performance monitoring for virtualized networks in a highly efficient manner. vNetTracer traces the packets at user defined trace- points through eBPF programs, which can be executed, modified and deleted at runtime. vNetTracer decomposes and attributes network performance to various components inside the virtu- alized network, which can help monitor network performance, locate bottlenecks, and recognize potential issues.
+vNetTracer is a network tracing system, which enables flexible and programmable network performance monitoring for virtualized networks in a highly efficient manner. vNetTracer traces the packets at user defined tracepoints through eBPF programs, which can be executed, modified and deleted at runtime. vNetTracer decomposes and attributes network performance to various components inside the virtualized network, which can help monitor network performance, locate bottlenecks, and recognize potential issues.
 
 
 # Dependency 
