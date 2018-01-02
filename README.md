@@ -8,6 +8,12 @@ You need:
 
 > gcc, python and bcc (https://github.com/iovisor/bcc)
 
+Kernel modification: 
+
+> sender side:
+
+> receiver side:
+
 # Usage 
 
 To adopt vNetTracer in your systems, please follow the steps below:
