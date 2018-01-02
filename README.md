@@ -14,19 +14,19 @@ To adopt vNetTracer in your systems, please follow the steps below:
 
 1, Use the template bpf script to write and configure your own tracing scripts.
 
-## Configuration 
-
 To configure your tracing:
 
 > modify the files in the config folder based on your tracing purpose, such as IP addresses, ports, etc.
 
+To write your tracing logic:
+
+> modify the script.c file and add your c code inside.
 
 2, Execute the tracing scripts to collect raw tracing data.
-3, Calculate the raw tracing data and analyze the potential problems. 
-
-
-To execute the bpf script:
 
 > $ python script.py
+
+3, Calculate the raw tracing data and analyze the potential problems. 
+
 
 
