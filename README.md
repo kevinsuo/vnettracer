@@ -64,5 +64,5 @@ To write your tracing logic:
 
 Take multiple host container network latency tracing as an example:
 
-<center><a href="example/instruction.png"><img src="example/instruction.png" border=0 width=500></a></center>
+<center><a href="example/instruction.png"><img src="example/instruction.png" border=0 width=600></a></center>
 
