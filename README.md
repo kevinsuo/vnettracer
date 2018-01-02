@@ -27,11 +27,10 @@ UDP:
 > net/ipv4/udp.c
 
 
-To get TCP header options (default value): 
+To get TCP header options (default value is 0): 
 
 > $ sudo sysctl -n net.ipv4.tcp_option
 
-0
 
 To enable TCP header options: 
 
