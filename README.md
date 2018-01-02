@@ -10,9 +10,22 @@ You need:
 
 Kernel modification: 
 
-> sender side:
+> sender and receiver side: search "by Kun" in the following files:
 
-> receiver side:
+TCP: 
+
+> include/net/netns/ipv4.h
+
+> net/ipv4/sysctl_net_ipv4.c
+
+> net/ipv4/tcp_ipv4.c
+
+> net/ipv4/tcp_output.c
+
+UDP: 
+
+> net/ipv4/udp.c
+
 
 # Usage 
 
