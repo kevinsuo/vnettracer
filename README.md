@@ -22,6 +22,17 @@ TCP:
 
 > net/ipv4/tcp_output.c
 
+To get TCP header options (default value): 
+
+> $ sudo sysctl -n net.ipv4.tcp_option
+
+0
+
+To enable TCP header options: 
+
+> $ sudo sysctl -w net.ipv4.tcp_option=1
+
+
 UDP: 
 
 > net/ipv4/udp.c
