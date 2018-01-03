@@ -62,7 +62,18 @@ To write your tracing logic:
 
 # Example 
 
-Take multiple host container network latency tracing as an example:
+Take multiple host container network latency tracing as an example. 
 
 <center><a href="example/instruction.png"><img src="example/instruction.png" border=0 width=600></a></center>
+
+Step 1:
+
+Based on the network architecture, environment and tracing goals, edit the configuration files and ebpf scripts. For instance, all tracing files under vnettracer/example/vm1/ are used for packet tracing from containerized applications to the vm1 network stack. We added three functions and attached them to veth0, flannel0 and eth0 on vm1. The functions collect the raw data including tracing time, tracepoint location and message content.
+
+Step 2:
+
+Step 3:
+
+
+
 
