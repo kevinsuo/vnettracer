@@ -68,11 +68,19 @@ Take multiple host container network latency tracing as an example.
 
 Step 1:
 
-Based on the network architecture, environment and tracing goals, edit the configuration files and ebpf scripts. For instance, all tracing files under vnettracer/example/vm1/ are used for packet tracing from containerized applications to the vm1 network stack. We added three functions and attached them to veth0, flannel0 and eth0 on vm1. The functions collect the raw data including tracing time, tracepoint location and message content.
+Based on the network architecture, environment and tracing goals, edit the configuration files and ebpf scripts. For instance, all tracing files under vnettracer/example/vm1/ are used for packet tracing from containerized applications to the vm1 network stack. We added three functions and attached them to veth0, flannel0 and eth0 on vm1. The functions collect the raw data including tracing time, tracepoint location and message content. Besides, set up the global configuration for the database. In this example, we used influxdb (https://www.influxdata.com/) and run it on vm3. We created database tables for each individual tracepoint. The table format is <time (number), tracepoint location (number) and packet message (string)>.
 
 Step 2:
 
+Execute the eBPF scripts on each vm. 
+
+> $ python script.py
+
+Once the raw tracing data is fetched, they will be sent to the database on vm3. To mitigate the overhead, options such as writing data to local memory (see ebpf templates) or pinning scripts to specific CPU core can be adopted.
+
 Step 3:
+
+After the data is collected, further operations such as data cleaning or calculation can be done for future analysis. In this example, we calcuate the time between two tracepoints to attribute network latency to various components inside the container virtualized stack. For tracepoints on the same node, just calculate the difference delta(T) of two tracing time. For tracepoints on the different nodes, add or remove the time skew between the two nodes from the above difference delta(T). 
 
 
 
