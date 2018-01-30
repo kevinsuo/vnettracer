@@ -70,6 +70,16 @@ Step 1:
 
 Based on the network architecture, environment and tracing goals, edit the configuration files and ebpf scripts. For instance, all tracing files under vnettracer/example/vm1/ are used for packet tracing from containerized applications to the vm1 network stack. We added three functions and attached them to veth0, flannel0 and eth0 on vm1. The functions collect the raw data including tracing time, tracepoint location and message content. Besides, set up the global configuration for the database. In this example, we used influxdb (https://www.influxdata.com/) and run it on vm3. We created database tables for each individual tracepoint. The table format is <time (number), tracepoint location (number) and packet message (string)>.
 
+For ubuntu, install and start the InfluxDB service:
+> $ sudo apt-get update && sudo apt-get install influxdb
+> $ sudo service influxdb start 
+
+For centos,
+> $ sudo yum install influxdb
+> $ sudo systemctl start influxdb
+
+> $ CREATE DATABASE db_name
+
 Step 2:
 
 Execute the eBPF scripts on each vm. 
