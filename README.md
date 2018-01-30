@@ -72,10 +72,12 @@ Based on the network architecture, environment and tracing goals, edit the confi
 
 For ubuntu, install and start the InfluxDB service:
 > $ sudo apt-get update && sudo apt-get install influxdb
+
 > $ sudo service influxdb start 
 
 For centos,
 > $ sudo yum install influxdb
+
 > $ sudo systemctl start influxdb
 
 > $ CREATE DATABASE db_name
