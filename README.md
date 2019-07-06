@@ -10,7 +10,7 @@ You need:
 
 Kernel modification: 
 
-> sender and receiver side: search "by Kun" in the following files:
+> sender and receiver side:
 
 TCP: 
 
